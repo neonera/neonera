@@ -1,38 +1,212 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* html, body div, body div div, main { */
+html, #root, main {
+  width: 100%;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+body {
+  width: 100%;
+  height: 100%;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 0;
+  font-family: Inter, Manrope, -apple-system, BlinkMacSystemFont, 'Roboto', 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #131416;
+  background: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+p {
+  font-family: "IBM Plex Sans", Roboto, sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  text-decoration: none;
+  color: #6af;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff11;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background: #fff3;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff3a;
+}
+
+
+/* Global classes */
+
+.primaryButton, .secondaryButton {
+  padding: 10px 15px;
+
+  color: white;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #63bef2 0%, #1397E6 100%);
+  text-decoration: none;
+
+  transition: filter .1s, transform .1s;
+}
+
+.primaryButton:hover, .secondaryButton:hover {
+  cursor: pointer;
+  filter: brightness(.9);
+}
+
+.primaryButton:active, .secondaryButton:active {
+  filter: brightness(.8);
+  transform: scale(.95);
+}
+
+.secondaryButton {
+  width: fit-content;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  border-radius: none;
+  background: transparent;
+}
+
+
+/* Intro */
+
+.introDiv {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5%;
+}
+
+.introDiv h1 {
+  margin-right: -30px;
+  letter-spacing: 30px;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+
+/* Content */
+
+.contentDiv {
+  background: #131416;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.headerDiv {
+  width: 100%;
+  height: 200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerDiv h1 {
+  font-size: 35px;
+}
+
+
+/* Products */
+
+.productsDiv {
+  width: calc(100% - 400px);
+  padding: 0 200px;
+  padding-bottom: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.productCard {
+  position: relative;
+  width: 340px;
+  height: 240px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 32px #0001;
+  background: #2a2b2d;
+}
+
+.productCard img {
+  padding: 0;
+
+  padding: 10px;
+  background: white;
+  border-radius: 40px;
+}
+
+.productCard h1 {
+  position: absolute;
+  top: 20px;
+  left: 115px;
+  height: 80px;
+  line-height: 80px;
+}
+
+.productCard div {
+  height: 90px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.productCard a {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+}
+
+.productCard a:last-child {
+  left: 70px;
+}
+
+/* Footer */
+
+.footerDiv {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+.footerDiv p {
+  margin: 0;
+  padding: 20px;
+  color: #888;
 }

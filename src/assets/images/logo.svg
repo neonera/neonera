@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="880" version="1.1" viewBox="0 0 317.5 232.83" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="c" x1="4.2837" x2="304.65" y1="26.817" y2="26.46" gradientTransform="matrix(1.0008 0 0 1.0011 -.13223 -.13227)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#514be9" offset="0"/>
+      <stop stop-color="#f35df7" offset="1"/>
+    </linearGradient>
+    <radialGradient id="b" cx="32.493" cy="271.79" r="158.75" gradientTransform="matrix(1.7975 -.16021 .11458 1.2863 -78.235 -103.63)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#45f360" offset="0"/>
+      <stop stop-color="#2a8d3c" stop-opacity="0" offset="1"/>
+    </radialGradient>
+    <radialGradient id="a" cx="119.47" cy="218.75" r="158.75" gradientTransform="matrix(-1.8297 -.08413 .045636 -.99314 501.36 440.77)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3af7ff" offset="0"/>
+      <stop stop-color="#60cfd2" stop-opacity="0" offset="1"/>
+    </radialGradient>
+  </defs>
+  <g>
+    <rect width="317.5" height="232.83" fill="url(#c)"/>
+    <rect width="317.5" height="232.83" fill="url(#a)"/>
+    <rect width="317.5" height="232.83" fill="url(#b)"/>
+    <g transform="matrix(2.0033 0 0 2.0033 -74.644 -138.36)" fill="#fff" stroke="#fff" stroke-width="6">
+      <path d="m66.675 155.05v-52.917h10.583l26.458 26.458-26.458-26.458h-10.583z" style="paint-order:stroke fill markers"/>
+      <path d="m77.258 125.41 26.458 26.458h10.583v-52.917 52.917h-10.583z" style="mix-blend-mode:normal;paint-order:stroke fill markers"/>
+      <path d="m132.29 102.13h37.042-37.042v21.167z" style="mix-blend-mode:normal;paint-order:stroke fill markers"/>
+      <path d="m132.29 152.4h37.042-37.042v-10.583l21.167-15.875-21.167 15.875z" style="mix-blend-mode:normal;paint-order:stroke fill markers"/>
+    </g>
+  </g>
+</svg>
