@@ -89,7 +89,7 @@ a {
 }
 
 .bluePurpleGradient {
-  background: linear-gradient(to right, #514be9, #f35df7);
+  background: linear-gradient(to right, #5555e7, #f75ef7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
