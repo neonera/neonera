@@ -5,8 +5,6 @@ import logo from './assets/images/logo.svg'
 
 import ScrollToTop from './ScrollToTop';
 import MainPage from './MainPage';
-// import OldPage from './OldPage';
-// import StrawberryPage from './StrawberryPage';
 
 function App() {
   return (
@@ -18,8 +16,6 @@ function App() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<MainPage />} />
-        {/*<Route path="/strawberry" element={<StrawberryPage />} />
-        <Route path="/newpage" element={<MainPage />} />*/}
       </Routes>
       <footer>
         <p>© 2022 <Link to="/">Neon Era</Link>. All Rights Reserved.</p>

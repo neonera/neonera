@@ -64,18 +64,9 @@ a {
   border-radius: 30px;
   background: linear-gradient(135deg, #63bef2 0%, #1397E6 100%);
   text-decoration: none;
+  display: inline-block;
 
   transition: filter .1s, transform .1s;
-}
-
-.primaryButton:hover, .secondaryButton:hover {
-  cursor: pointer;
-  filter: brightness(.9);
-}
-
-.primaryButton:active, .secondaryButton:active {
-  filter: brightness(.8);
-  transform: scale(.95);
 }
 
 .secondaryButton {
@@ -84,8 +75,18 @@ a {
   font-size: 16px;
   font-weight: 500;
 
-  border-radius: none;
+  border-radius: unset;
   background: transparent;
+}
+
+.primaryButton:hover, .secondaryButton:hover {
+  cursor: pointer;
+  filter: brightness(.8);
+}
+
+.primaryButton:active, .secondaryButton:active {
+  filter: brightness(.7);
+  transform: scale(.95);
 }
 
 .bluePurpleGradient {
@@ -114,6 +115,14 @@ a {
   }
 }
 
+.keywordDiv {
+  height: 200px;
+  padding-left: 10%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 
 
 /* Header */
@@ -124,9 +133,9 @@ header {
   height: 60px;
   top: 0;
 
-  background: #141414;
   background: #141414aa;
   backdrop-filter: blur(16px);
+  z-index: 10;
 }
 
 header > h1 {
