@@ -1,0 +1,65 @@
+/* Intro */
+
+.strawberryIntroInner > svg {
+  width: 100px;
+  height: 100px;
+}
+
+.strawberryIntroInner > h1 {
+  font-size: 50px;
+}
+
+/* ...animation */
+
+.strawberryIntroInner > svg {
+  animation-name: svg-animate;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+.strawberryIntro > p, .strawberryIntroInner > h1 {
+  animation-name: text-animate;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes svg-animate {
+  0% {
+    opacity: 0;
+    transform: translateX(143px) scale(2);
+  }
+  22% {
+    /* animation-timing-function: linear; */
+    opacity: 1;
+    transform: translateX(143px) scale(2.2);
+  }
+  44% {
+    opacity: 1;
+    transform: translateX(143px) scale(2.4);
+  }
+  66% {
+    opacity: 0;
+    transform: translateX(143px) scale(2.6);
+  }
+  66% {
+    animation-timing-function: cubic-bezier(0, 1, 1, 1);
+    opacity: 0;
+    transform: translateX(100px) scale(1.2);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes text-animate {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

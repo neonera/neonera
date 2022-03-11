@@ -47,7 +47,6 @@
 /* ...specific logos */
 
 .strawberryLogo > g > path {
-  /* stroke: #99333f !important; */
   stroke: url("#strawberryLogo") !important;
   fill: url("#strawberryLogo") !important;
 }
